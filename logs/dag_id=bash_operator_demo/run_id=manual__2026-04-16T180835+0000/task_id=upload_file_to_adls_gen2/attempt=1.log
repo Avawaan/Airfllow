@@ -1,0 +1,15 @@
+{"timestamp":"2026-04-16T18:08:38.580802Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-16T18:08:38.582249Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/operator_demo.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-16T18:08:38.734563Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/operator_demo.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-04-16T18:08:38.734737Z","level":"warning","event":"The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/operator_demo.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2026-04-16T18:08:38.734807Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/operator_demo.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-04-16T18:08:38.757295Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:38.757878Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:38.758302Z","level":"info","event":"Current task name:upload_file_to_adls_gen2","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:38.758814Z","level":"info","event":"Dag name:bash_operator_demo","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:38.896989Z","level":"warning","event":"empty cryptography key - values will not be stored encrypted.","logger":"airflow.models.crypto","filename":"crypto.py","lineno":82}
+{"timestamp":"2026-04-16T18:08:55.490106Z","level":"info","event":"✅ Uploaded '/opt/airflow/dags/flight-time.csv' → adls://demo//demo/flight-time.csv","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:55.493488Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":217}
+{"timestamp":"2026-04-16T18:08:55.554131Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:55.554787Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-16T18:08:55.555947Z","level":"info","event":"Task operator:<Task(PythonOperator): upload_file_to_adls_gen2>","logger":"task.stdout"}
